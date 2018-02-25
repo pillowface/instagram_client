@@ -1,0 +1,4 @@
+= image_tag @user.profile_picture
+%h1= "#{@user.username}'s user media feed"
+- for media_item in @user_recent_media
+  = image_tag media_item.images.thumbnail.url
